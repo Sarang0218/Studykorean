@@ -1,0 +1,35 @@
+
+
+#x {
+  right:23%;
+  bottom:10%;
+  position: absolute;
+  
+}
+
+.center {
+  left:50%;
+  top:50%
+  
+}
+
+img {
+  #x {
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    width: 50%;
+    height:50%;
+  }
+  #o {
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    width: 50%;
+    height: 50%;
+  }
+
+  max-width: 100px;
+
+  
+}

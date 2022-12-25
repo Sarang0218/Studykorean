@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+{% load static %}
+<div class="d-flex justify-content-center" style="padding-top: 5%">
+  <font size="7">안녕하세요! {{ user.username }}님</font>
+</div>
+<div class="d-flex justify-content-center" style="padding-top: 2%">
+
+  
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{% static 'cardfront.png' %}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">1학년 국어 진단</h5>
+    <p class="card-text">1학년 국어 개념들에 관한 기본적인 진단 평가이다.  </p>
+    <a href="/quiz" class="btn btn-primary">시작</a>
+  </div>
+</div>
+
+</div>
+{% endblock %}

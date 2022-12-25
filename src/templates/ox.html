@@ -1,0 +1,13 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'ox.css' %}">
+</head>
+<h1 style="text-align:center; padding-top: 10%">{{question}}</h1>
+
+
+
+
+<input type="image" src="{% static 'o.png'%}" style="max-width:200px; left: 23%; position: absolute; bottom:23%" onClick="location.href='{{AnswerO}}'">
+
+<input type="image" src="{% static 'x.png'%}" style="max-width:200px; right: 23%; position: absolute; bottom:23%" onClick="location.href='{{AnswerX}}'">

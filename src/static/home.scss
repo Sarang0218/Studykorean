@@ -1,0 +1,344 @@
+/* general config */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&display=swap');
+
+$vert-pad: 50px;
+$horz-pad: 300px;
+
+$black: #181819;
+$darkgrey: #6b6b6d;
+$grey: #9b9ba0;
+$lightgrey: #ccccce;
+$white: #e8eaed;
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Do Hyeon';
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+/* header */
+
+.header {
+  padding-left: $horz-pad;
+  padding-right: $horz-pad;
+  padding-top: $vert-pad;
+  padding-bottom: $vert-pad;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  
+  a {
+    color: $white;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+  }
+  
+  .title {
+    font-family: 'Gugi';
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* top */
+
+.top {
+  padding-left: $horz-pad;
+  padding-right: $horz-pad;
+  padding-top: $vert-pad;
+  padding-bottom: $vert-pad;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  transition: padding-left 0.5s, padding-right 0.5s;
+  border-radius: 0;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  
+  #left {
+    width: 20%;
+    text-align: center;
+    
+    a {
+      font-size: 80px;
+      font-family: 'Gugi';
+    }
+  }
+  
+  #right {
+    width: 70%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+      filter: invert(1); /* change from ori black to white */
+      width: 50%;
+      margin-left: 50%;
+    }
+    
+    a {
+      margin-top: -100px;
+      font-size: 40px;
+      float: left;
+      margin-right: 50%;
+    }
+  }
+  
+}
+
+/* section */
+
+.section {
+  padding-left: $horz-pad;
+  padding-right: $horz-pad;
+  padding-top: $vert-pad;
+  padding-bottom: $vert-pad;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  transition: padding-left 0.5s, padding-right 0.5s;
+  
+  .image {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+      width: 50%;
+    }
+  } 
+
+  .content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* left, flex-end is right */
+    justify-content: center;
+    
+    .text {
+       color: $black;
+       font-size: 20px;
+       font-family: 'Skranji';
+    }
+    
+    .button {
+      margin-top: 10px;
+      font-size: 18px;
+      color: $darkgrey;
+    }
+  }
+  
+}
+
+/* features */
+
+.features {
+  padding-left: $horz-pad;
+  padding-right: $horz-pad;
+  padding-top: $vert-pad;
+  padding-bottom: $vert-pad;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $lightgrey;
+  border-radius: 0px;
+  transition: padding-left 0.5s, padding-right 0.5s;
+  
+  div:not(:first-child) {
+    margin-left: 10%;
+  }
+  
+  #left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+    img {
+      width: 50%;
+      filter: invert(0.4);
+    }
+  }
+  
+  #right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    a {
+      color: $darkgrey;
+      font-size: 40px;
+    }
+  }
+}
+
+/* testimonials */
+
+.testimonials {
+  padding-left: $horz-pad;
+  padding-right: $horz-pad;
+  padding-top: $vert-pad;
+  padding-bottom: $vert-pad;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: padding-left 0.5s, padding-right 0.5s;
+  
+  .box {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: $darkgrey;
+    padding: 20px;
+    border-radius: 0px;
+    
+    a {
+      color: $white; 
+    }
+    
+    .comment {
+      font-family: 'Skranji';
+      font-size: 18px;
+    }
+    
+    .name {
+      color: $grey;
+      text-align: right;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+  }
+  
+  .box:not(:first-child) {
+    margin-left: 10%; 
+  }
+}
+
+/* footer */
+
+.footer {
+  padding-left: $horz-pad;
+  padding-right: $horz-pad;
+  padding-top: $vert-pad;
+  padding-bottom: $vert-pad;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  border-radius: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: padding-left 0.5s, padding-right 0.5s;
+  
+  div:not(:first-child) {
+    margin-left: 3%;
+  }
+  
+  #left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    input[type='text'] {
+      background: transparent;
+      border: 1px solid $white;
+      height: 25px;
+      width: 100px;
+      border-radius: 0px;
+      margin-bottom: 5px;
+      padding-left: 10px;
+      color: $white;
+      font-family: 'Staatliches';
+      font-size: 15px;
+      padding-left: 10px;
+      transition: width 0.5s;
+    }
+    
+    input[type='text']::placeholder {
+      color: $white;
+      font-family: 'Staatliches';
+      font-size: 15px;
+    }
+    
+    input[type='text']:focus {
+      outline: none;
+      width: 150px;
+    }
+  }
+  
+  #center {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    .heading {
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    
+    .description {
+      font-family: 'Skranji';
+      font-size: 15px;
+    }
+  }
+  
+  #right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
